@@ -1,0 +1,7 @@
+<h2>Let's Chat</h2>
+<div *ngFor="let message of messages | async">
+  {{message.message}}
+</div>
+<div>
+  <input type="text" id="txtMessage" #txtMessage> <button (click)="sendMessage(txtMessage.value)">Send</button>
+</div>
